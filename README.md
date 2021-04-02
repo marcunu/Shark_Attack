@@ -34,9 +34,7 @@ Este proyecto se basa en un análisis de datos acerca de los ataques de tiburon 
 
 # DataFrames
 
-The `shark_attack` dataframe has been downloaded from:
-
-[Kaggle](https://www.kaggle.com/teajay/global-shark-attacks)
+The `shark_attack` dataframe has been downloaded from [Kaggle](https://www.kaggle.com/teajay/global-shark-attacks)
 
 
 # Programs
