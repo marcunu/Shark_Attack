@@ -22,6 +22,7 @@ This project is based on an analysis of data on shark attacks throughout the wor
 
 # Hyphotheses
 
+* What are the differences between the main shark attack researchers?
 * Ataque de tiburón segun `sexo`.
 * Ataques de tiburón por `zona`.
 * Ataques de tiburón en funcion de la actividad `realizada`.
