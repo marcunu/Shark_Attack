@@ -1,35 +1,41 @@
 # Shark_Attack
 
-Este proyecto se basa en un análisis de datos acerca de los ataques de tiburon a lo largo 
+This project is based on an analysis of data on shark attacks throughout the world.
 
 # Index
 
-* Hipothesis
 * Documents
+* Hipothesis
 * Steps
 * DataFrames
 * Python libraries
 * Programms
 
 
+# Documents
+
+* Preliminary exploration:
+* Limpieza: a file in which information has been filtered to arrive at hypotheses.
+* Visualization: 
+* Storytelling: 
 
 
-# Hipótesis de estudio
+# Hyphotheses
 
 * Ataque de tiburón segun `sexo`.
 * Ataques de tiburón por `zona`.
 * Ataques de tiburón en funcion de la actividad `realizada`.
 
 
-
-# Documents
-
-
 # Steps
 
-* The first step is to filter the data and delete all de rows where there is no data, using the function `.dropna(axis=0, how="all")`
-        * `axis` is to select the rows not the columns
-        * `how = "all"` is to delete if all the values in the rows are Nan
+* `Step1`: filter the data and delete all de rows where there is no data, using the function `.dropna(axis=0, how="all")`
+        * `axis` is to select the rows not the columns.
+        * `how = "all"` is to delete if all the values in the rows are Nan.
+        
+* `Step2`: after filtering, study hypotheses have to be selected.
+
+* `Step3`: Analyse the hypotheses
 
 
 # DataFrames
