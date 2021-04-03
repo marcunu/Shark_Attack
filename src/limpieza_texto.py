@@ -1,6 +1,21 @@
 def funcioncita(x):
     return str(x+x)
 
+def elim_vacias(df, new_df, ax, hw):
+    '''
+    This function use a list to delete the columns or rows with no values. 
+
+    Argumetns:
+        -df: original dataframe from which to take the data
+        -list: list with the name of the columns to delete
+        -new_name: new name to de data frame
+
+    '''
+
+    new_df = df.dropna(axis=ax, how=hw)
+
+    return new_df
+
 
 def elim_columnas(df, lista, new_name):
 
