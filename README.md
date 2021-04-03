@@ -14,18 +14,19 @@ This project is based on an analysis of data on shark attacks throughout the wor
 
 # Documents
 
-* Preliminary exploration:
-* Limpieza: a file in which information has been filtered to arrive at hypotheses.
-* Visualization: 
-* Storytelling: 
+* 01 - Preliminary exploration
+* 02 - Clean up: a file in which information has been filtered to arrive at hypotheses.
+* 03 - Visualization 
+* 04 - Storytelling
 
 
 # Hyphotheses
 
-* What are the differences between the main shark attack researchers?
-* Ataque de tiburón segun `sexo`.
-* Ataques de tiburón por `zona`.
-* Ataques de tiburón en funcion de la actividad `realizada`.
+* Is there any relation between the `activity` and the `attack`? Does the shark species or age affect the type of injury?
+
+* how many `researchers` there are and how much research they have carried out. Is there a shark attack specialist?
+
+* Are sharks more aggressive depending on the `time`?
 
 
 # Steps
@@ -57,3 +58,4 @@ The `shark_attack` dataframe has been downloaded from [Kaggle](https://www.kaggl
 * Seaborn
 * Mathplotlib
 * Numpy
+* Personal function library

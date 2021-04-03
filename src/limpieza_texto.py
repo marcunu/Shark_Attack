@@ -18,7 +18,7 @@ def elim_vacias(df, new_df, ax, hw):
     return new_df
 
 
-def elim_columnas(df, lista, new_name):
+def elim_columnas(df, lista):
 
     '''
     This function use a list with the name of the columns you want to delete 
@@ -26,7 +26,6 @@ def elim_columnas(df, lista, new_name):
     Argumetns:
         -df: original dataframe from which to take the data
         -list: list with the name of the columns to delete
-        -new_name: new name to de data frame
 
     '''
 
@@ -75,3 +74,8 @@ def valores_distintos(df, column, value):
     '''
 
     return df[df[column] != value]
+
+
+def grafica_investigador(persona, color):
+    grafi = shrk[shrk["Investigator or Source"] == persona].reset_index()
+    sns.countplot(y=grafi.Country, palette=color)
