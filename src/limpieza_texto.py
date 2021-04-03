@@ -2,6 +2,7 @@ def funcioncita(x):
     return str(x+x)
 
 def elim_vacias(df, new_df, ax, hw):
+    
     '''
     This function use a list to delete the columns or rows with no values. 
 
