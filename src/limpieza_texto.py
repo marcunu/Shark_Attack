@@ -76,6 +76,8 @@ def valores_distintos(df, column, value):
     return df[df[column] != value]
 
 def df_filtered_best(data_frame, columna, n_ind):
+    import pandas as pd 
+    
     '''
     This function returns the most repeated values in the selected range.
 
@@ -94,9 +96,9 @@ def df_filtered_best(data_frame, columna, n_ind):
 
         i =data_frame[data_frame[columna] == i]
         df_final = pd.concat([df_final,i])
-
     
     return df_final
+
 
 def grafica_investigador(persona, color):
     grafi = shrk[shrk["Investigator or Source"] == persona].reset_index()
