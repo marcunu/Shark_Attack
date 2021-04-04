@@ -75,6 +75,20 @@ def valores_distintos(df, column, value):
 
     return df[df[column] != value]
 
+def df_filtered_best(columna, n_ind, color):
+
+    mejores = shrk[columna].value_counts(1)
+    top = list(mejores.index[:n_ind])    
+    
+    df_final = shrk[shrk[columna] == top[0]]
+    top.pop(0)
+    for i in top:
+
+        i =shrk[shrk[columna] == i]
+        df_final = pd.concat([df_final,i])
+
+    df_final.sample(5)
+    return sns.countplot(y=df_final.Activity, palette=color)
 
 def grafica_investigador(persona, color):
     grafi = shrk[shrk["Investigator or Source"] == persona].reset_index()
@@ -92,3 +106,5 @@ def grafico_lista_h(lista, color):
 
     df_final.sample(5)
     return sns.countplot(y=df_final.Activity, palette=color)
+
+
