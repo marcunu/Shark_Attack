@@ -75,20 +75,28 @@ def valores_distintos(df, column, value):
 
     return df[df[column] != value]
 
-def df_filtered_best(columna, n_ind, color):
+def df_filtered_best(data_frame, columna, n_ind):
+    '''
+    This function returns the most repeated values in the selected range.
 
-    mejores = shrk[columna].value_counts(1)
+    Arguments:
+        -Columna: selected column from which you want to take de values.
+        - n_ind: top rank values you want to take.
+
+    ''' 
+
+    mejores = data_frame[columna].value_counts(1)
     top = list(mejores.index[:n_ind])    
     
-    df_final = shrk[shrk[columna] == top[0]]
+    df_final = data_frame[data_frame[columna] == top[0]]
     top.pop(0)
     for i in top:
 
-        i =shrk[shrk[columna] == i]
+        i =data_frame[data_frame[columna] == i]
         df_final = pd.concat([df_final,i])
 
-    df_final.sample(5)
-    return sns.countplot(y=df_final.Activity, palette=color)
+    
+    return df_final
 
 def grafica_investigador(persona, color):
     grafi = shrk[shrk["Investigator or Source"] == persona].reset_index()
