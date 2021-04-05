@@ -22,7 +22,7 @@ This project is based on an analysis of data on shark attacks throughout the wor
 
 # Hyphotheses
 
-* Is there any relation between the `activity` and the `attack`? Does the shark species or age affect the type of injury?
+* Risk of death, countries and preliminary information.
 
 * How many researchers there are and how much research they have carried out. Is there a shark attack specialist?
 
